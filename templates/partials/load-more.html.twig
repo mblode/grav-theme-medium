@@ -1,0 +1,3 @@
+{% if pagination.hasNext %}
+    <div class="next"><a rel="next" href="{{ base_url }}/tmpl:infinite{{ pagination.params }}{{ pagination.nextUrl }}">Load More...</a></div>
+{% endif %}

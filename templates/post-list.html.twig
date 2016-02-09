@@ -1,0 +1,40 @@
+{% embed 'partials/base.html.twig' %}
+
+    {% set collection = page.collection %}
+    {% set pagination = collection.params.pagination %}
+
+    {% set jscroll_init %}
+    $(document).ready(function() {
+        $('.infinite-scroll').jscroll({
+        autoTrigger: true,
+        nextSelector: '[rel="next"]'
+        });
+    });
+    {% endset %}
+
+    {% block javascripts %}
+        {{ parent() }}
+        {% do assets.addInlineJs(jscroll_init) %}
+    {% endblock %}
+
+    {% block header %}
+        {% if theme_config.home_profile %}
+            {% include 'partials/profile.html.twig' %}
+        {% else %}
+            {{ parent() }}
+        {% endif %}
+    {% endblock %}
+
+    {% block content %}
+      <div class="infinite-scroll">
+        {% for post in collection %}
+          {% include 'partials/post-item.html.twig' %}
+        {% endfor %}
+        {% if config.plugins.pagination.enabled and collection.params.pagination %}
+            {% include 'partials/load-more.html.twig' %}
+        {% endif %}
+      </div>
+
+    {% endblock %}
+
+{% endembed %}

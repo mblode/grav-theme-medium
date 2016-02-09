@@ -1,0 +1,13 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block header %}
+    {% if page.header.profile %}
+        {% include 'partials/profile.html.twig' %}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {{ page.content }}
+{% endblock %}

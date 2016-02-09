@@ -1,0 +1,30 @@
+<div class="top-bar">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">
+              <a href="{{ base_url_relative }}">{{ site.title }}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+
+            {% for page in pages.children.visible %}
+            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+            <li class="{{ current_page }}">
+                <a href="{{ page.url }}">{{ page.menu }}</a>
+            </li>
+            {% endfor %}
+            {% if config.plugins.feed.enabled %}
+            <li>
+                <a class="cta" href="{{ base_url }}{{ pages.find('/blog').rawRoute }}.rss">{{ 'SUBSCRIBE'|t }}</a>
+            </li>
+            {% endif %}
+
+            {% if config.plugins.langswitcher.enabled %}
+            {% include 'partials/langswitcher.html.twig' %}
+            {% endif %}
+        </ul>
+    </div>
+</div>

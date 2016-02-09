@@ -1,0 +1,12 @@
+{% set collection = page.collection %}
+{% set pagination = collection.params.pagination %}
+
+{% if pagination|length > 1 %}
+
+    {% for item in collection %}
+        {% include 'partials/post-item.html.twig' with {'post': item} %}
+    {% endfor %}
+
+    {% include 'partials/load-more.html.twig' %}
+
+{% endif %}

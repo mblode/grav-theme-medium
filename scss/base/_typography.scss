@@ -1,0 +1,72 @@
+body {
+  font-size: 120%;
+}
+
+@include breakpoint(medium) {
+  body {
+    font-size: 125%;
+  }
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  color: $dark-gray;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.small {
+  color: $medium-gray;
+}
+
+.caption {
+  font-size: 1rem;
+  color: $medium-gray;
+}
+
+button {
+  font-family: $default-font-family;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+pre {
+  background: $lighter-gray;
+  margin-bottom: 16px;
+}
+
+date,
+.footer--text,
+.read-more {
+	font-size: 1rem;
+	color: $medium-gray;
+	margin: 0;
+}
+
+a date,
+a .read-more {
+  &:hover {
+    color: $dark-gray;
+  }
+}
+
+date,
+.footer--text,
+.caption {
+  font-family: $default-font-family;
+}
+
+.dark {
+  color: $black;
+
+  &:hover {
+    color: $primary-color;
+  }
+}

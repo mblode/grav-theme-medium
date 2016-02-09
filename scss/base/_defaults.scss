@@ -1,0 +1,18 @@
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+@each $name, $value in $button-sizes {
+    .button.#{$name} {
+			border-radius: calc(#{$value}*2)
+		}
+}
+
+.wf-loading {
+    visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+  visibility: visible;
+}

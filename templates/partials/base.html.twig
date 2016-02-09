@@ -1,0 +1,64 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+{% set avatar_url = pages.find('/about').media.images|first.url ?: url('theme://images/avatar.png') %}
+{% import 'macros/dates.twig' as dates %}
+<!DOCTYPE html>
+<html class="no-js" lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://use.typekit.net/rnc0odn.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <title>{% if header.title %}{{ header.title|e('html') }} - {% endif %}{{ 'SITE.TITLE'|t|e('html') }}</title>
+  <link rel="shortcut icon" href="{{ url('theme://images/favicon.ico') }}" />
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
+  {% block stylesheets %}
+    {% do assets.addCss('theme://css/app.css',100) %}
+  {% endblock %}
+  {{ assets.css() }}
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    {% include 'partials/navigation.html.twig' %}
+
+    <div class="row">
+      <div class="large-12 columns">
+
+        {% block header %}
+            {% if page.header.header is not same as(false) and theme_config.title_header %}
+                {% include 'partials/header.html.twig' %}
+            {% endif %}
+        {% endblock %}
+
+        <div class="{{ page.header.class }}">
+        {% block content %}{% endblock %}
+        </div>
+
+        {% block footer %}
+        {% include 'partials/footer.html.twig' %}
+        {% endblock %}
+      </div>
+    </div>
+
+    {% if site.analytics %}
+    {% include 'partials/analytics.html.twig' %}
+    {% endif %}
+
+    {% block javascripts %}
+
+        {% do assets.addJs('theme://bower_components/jquery/dist/jquery.min.js') %}
+        {% do assets.addJs('theme://bower_components/what-input/what-input.min.js') %}
+        {% do assets.addJs('theme://bower_components/foundation-sites/dist/foundation.min.js') %}
+        {% do assets.addJs('theme://js/app.js') %}
+        {% do assets.addJs('theme://js/jquery.jscroll.min.js') %}
+        <script id="dsq-count-scr" src="//matthewblode.disqus.com/count.js" async></script>
+    {% endblock %}
+    {{ assets.js() }}
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+name: Medium
+version: 1.2.1
+description: Minimal theme based on Medium's design language.
+icon: globe
+author:
+  name: Matthew Blode
+  email: m.blode@gmail.com
+  url: http://matthewblode.com
+homepage: https://github.com/mblode/grav-theme-medium
+demo: http://demo.getgrav.org/multilang-skeleton
+keywords: medium, theme, minimal, modern, fast, responsive, html5, css3, multilanguage
+bugs: https://github.com/getgrav/grav-theme-quimby/issues
+license: MIT
+
+form:
+  validation: loose
+  fields:
+
+    default_lang:
+        type: text
+        size: small
+        label: Default lang
+        default: 'en'
+        validate:
+          type: text
+
+    author:
+        type: text
+        size: medium
+        label: Author
+        default: 'Matthew Blode'
+        validate:
+          type: text
+
+    home_profile:
+        type: toggle
+        label: Home Profile
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+
+    infinite_scroll:
+        type: toggle
+        label: Infinite Scroll
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+
+    analytics:
+        type: text
+        size: medium
+        label: Google Analytics Code
+        default: 'UA-YOURCODE'
+        validate:
+          type: text
+
+    social.twitter:
+        type: text
+        size: medium
+        label: Twitter
+        default: '@mblode'
+        validate:
+          type: text

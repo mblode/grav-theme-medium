@@ -1,0 +1,10 @@
+{% macro translateMonths(index) %}
+{% set months = grav.language.translate(['MONTHS_OF_THE_YEAR'])|split(',') %}
+{{ months[index - 1]}}
+{% endmacro %}
+
+{% macro translateDays(index) %}
+{% set days = grav.language.translate(['DAYS_OF_THE_WEEK'])|split(',') %}
+{{ days[index - 1]}}
+{% endmacro %}
+

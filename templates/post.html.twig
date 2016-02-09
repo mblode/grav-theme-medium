@@ -1,0 +1,76 @@
+{% embed 'partials/base.html.twig' %}
+
+{% block content %}
+<article class="post">
+    <header class="post--header">
+        <h1>{{ page.title }}</h1>
+        <date class="post--date">{{ page.date|nicetime(true) }}</date>
+    </header>
+    <section class="post--body">
+        {{ page.content }}
+    </section>
+</article>
+
+<div class="post--meta">
+  <div class="post--info">
+    <a class="post--avatar" href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">
+        <img src="{{ avatar_url }}">
+    </a>
+
+    <div class="post--description">
+        <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">
+            <h5 class="dark">{{ theme_config.author }}</h5>
+        </a>
+        <p class="caption">{{ site.metadata.description }}</p>
+    </div>
+  </div>
+
+  <div class="post--follow">
+    <button class="button default hollow">
+        <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">Follow</a>
+    </button>
+  </div>
+
+</div>
+
+<div class="post--nav">
+    {% if not page.isFirst %}
+    <span class="prev">
+        <a href="{{ page.nextSibling.url }}">
+            <span class="arrow">←</span>
+            {{ page.nextSibling.title }}</a>
+    </span>
+    {% endif %}
+
+    {% if not page.isLast %}
+    <span class="next">
+        <a href="{{ page.prevSibling.url }}">{{ page.prevSibling.title }}
+            <span class="arrow">→</span>
+        </a>
+    </span>
+    {% endif %}
+</div>
+
+{% if page.header.disqus %}
+<div class="archive readmore">
+    <h3>Comments</h3>
+    {% include 'partials/disqus.html.twig' %}
+</div>
+{% endif %}
+
+{% if page.header.archive %}
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    {% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}
+            <aside class="dates">{{ post.date|date("M d")  }}</aside>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}
+
+{% endembed %}

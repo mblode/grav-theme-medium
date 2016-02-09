@@ -1,0 +1,32 @@
+.top-bar {
+  background: $white;
+  border-bottom: 1px solid $light-gray;
+}
+
+.top-bar ul {
+   background: $white;
+
+   li:not(.menu-text) a {
+     margin-top: .25rem;
+     font-size: 1rem;
+     font-family: $default-font-family;
+     color: $medium-gray;
+
+     &:hover {
+       color: $black;
+     }
+   }
+
+  .menu-text {
+    padding: 0;
+  }
+
+  .menu-text a {
+     color: $black;
+     font-family: $header-font-family;
+  }
+
+  .active a {
+    color: $black !important;
+  }
+}

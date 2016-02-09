@@ -1,5 +1,5 @@
 name: Medium
-version: 1.2.1
+version: 1.0.0
 description: Minimal theme based on Medium's design language.
 icon: globe
 author:
@@ -9,7 +9,7 @@ author:
 homepage: https://github.com/mblode/grav-theme-medium
 demo: http://demo.getgrav.org/multilang-skeleton
 keywords: medium, theme, minimal, modern, fast, responsive, html5, css3, multilanguage
-bugs: https://github.com/getgrav/grav-theme-quimby/issues
+bugs: https://github.com/getgrav/grav-theme-medium/issues
 license: MIT
 
 form:
@@ -35,7 +35,7 @@ form:
     home_profile:
         type: toggle
         label: Home Profile
-        highlight: 1
+        highlight: 0
         default: 0
         options:
           1: Enabled

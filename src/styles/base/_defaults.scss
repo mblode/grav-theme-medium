@@ -1,3 +1,12 @@
+.home--body {
+	background: $off-white;
+	@include breakpoint(large) {
+		.row {
+			max-width: 1040px;
+		}
+	}
+}
+
 img {
 	width: 100%;
 	max-width: 100%;
@@ -15,4 +24,8 @@ img {
 
 .wf-active, .wf-inactive {
   visibility: visible;
+}
+
+.hr--small {
+	margin-top: 0;
 }

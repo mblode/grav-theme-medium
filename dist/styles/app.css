@@ -384,7 +384,7 @@ body {
   font-weight: normal;
   line-height: 1.6;
   color: #333333;
-  background: #fafafa;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1713,7 +1713,7 @@ legend {
   padding: 1.25rem;
   margin: 1.125rem 0; }
   .fieldset legend {
-    background: #fafafa;
+    background: #fff;
     padding: 0 0.1875rem;
     margin: 0;
     margin-left: -0.1875rem; }
@@ -1918,10 +1918,8 @@ select {
 
 .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
   -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transform: scaleY(-1);
-      -ms-transform: scaleY(-1);
           transform: scaleY(-1); }
 
 .badge {
@@ -1987,7 +1985,7 @@ select {
     margin: 0;
     font-size: inherit; }
     .button-group .button:not(:last-child) {
-      border-right: 1px solid #fafafa; }
+      border-right: 1px solid #fff; }
   .button-group.tiny {
     font-size: 0.6rem; }
   .button-group.small {
@@ -2041,7 +2039,7 @@ select {
     .button-group.stacked-for-small .button {
       width: auto; }
       .button-group.stacked-for-small .button:not(:last-child) {
-        border-right: 1px solid #fafafa; } }
+        border-right: 1px solid #fff; } }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     .button-group.stacked-for-small.expanded {
       display: block; }
@@ -2114,11 +2112,9 @@ select {
     z-index: 1;
     display: block;
     -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
             transform: translateX(-100%); }
   .is-drilldown-submenu.is-closing {
     -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
             transform: translateX(100%); }
 
 .is-drilldown-submenu-parent > a {
@@ -2152,7 +2148,7 @@ select {
   margin-right: 0.75rem; }
 
 .dropdown-pane {
-  background-color: #fafafa;
+  background-color: #fff;
   border: 1px solid #B3B3B3;
   border-radius: 0;
   display: block;
@@ -2436,7 +2432,7 @@ body {
 .off-canvas-content,
 .off-canvas-content {
   min-height: 100%;
-  background: #fafafa;
+  background: #fff;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
@@ -2463,7 +2459,6 @@ body {
   max-height: 100%;
   overflow-y: auto;
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0); }
   [data-whatinput='mouse'] .off-canvas {
     outline: 0; }
@@ -2473,7 +2468,6 @@ body {
     width: 250px; }
     .is-open-left {
       -webkit-transform: translateX(250px);
-          -ms-transform: translateX(250px);
               transform: translateX(250px); }
   .off-canvas.position-right {
     right: -250px;
@@ -2481,7 +2475,6 @@ body {
     width: 250px; }
     .is-open-right {
       -webkit-transform: translateX(-250px);
-          -ms-transform: translateX(-250px);
               transform: translateX(-250px); }
 
 @media screen and (min-width: 40em) {
@@ -2549,7 +2542,6 @@ body {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 10;
   padding: 1rem;
@@ -2667,7 +2659,6 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   position: absolute;
   margin: 0;
@@ -2706,7 +2697,6 @@ body {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
   left: 0;
@@ -2737,7 +2727,6 @@ body {
   height: 12.5rem;
   margin: 0 1.25rem;
   -webkit-transform: scale(1, -1);
-      -ms-transform: scale(1, -1);
           transform: scale(1, -1); }
   .slider.vertical .slider-fill {
     top: 0;
@@ -2750,7 +2739,6 @@ body {
     width: 1.4rem;
     height: 1.4rem;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
 
 .sticky-container {
@@ -2898,7 +2886,6 @@ body.is-reveal-open {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
 
 .switch-active {
@@ -3169,7 +3156,6 @@ table.hover tr:nth-of-type(even):hover {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
   .tooltip.top::before {
     content: '';
@@ -3195,7 +3181,6 @@ table.hover tr:nth-of-type(even):hover {
     left: 100%;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
   .tooltip.right::before {
     content: '';
@@ -3211,7 +3196,6 @@ table.hover tr:nth-of-type(even):hover {
     right: 100%;
     top: 50%;
     -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
 
 .top-bar {
@@ -3274,7 +3258,6 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-in-down.mui-enter {
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3284,12 +3267,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-in-down.mui-enter.mui-enter-active {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0); }
 
 .slide-in-left.mui-enter {
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
           transform: translateX(-100%);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3299,12 +3280,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-in-left.mui-enter.mui-enter-active {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0); }
 
 .slide-in-up.mui-enter {
   -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
           transform: translateY(100%);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3314,12 +3293,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-in-up.mui-enter.mui-enter-active {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0); }
 
 .slide-in-right.mui-enter {
   -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
           transform: translateX(100%);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3329,12 +3306,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-in-right.mui-enter.mui-enter-active {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0); }
 
 .slide-out-down.mui-leave {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3344,12 +3319,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-out-down.mui-leave.mui-leave-active {
   -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
           transform: translateY(100%); }
 
 .slide-out-right.mui-leave {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3359,12 +3332,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-out-right.mui-leave.mui-leave-active {
   -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
           transform: translateX(100%); }
 
 .slide-out-up.mui-leave {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
           transform: translateY(0);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3374,12 +3345,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-out-up.mui-leave.mui-leave-active {
   -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
           transform: translateY(-100%); }
 
 .slide-out-left.mui-leave {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3389,7 +3358,6 @@ table.hover tr:nth-of-type(even):hover {
 
 .slide-out-left.mui-leave.mui-leave-active {
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
           transform: translateX(-100%); }
 
 .fade-in.mui-enter {
@@ -3410,7 +3378,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotateX(-90deg);
           transform: perspective(2000px) rotateX(-90deg);
   -webkit-transform-origin: top;
-      -ms-transform-origin: top;
           transform-origin: top;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3426,7 +3393,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotateY(-90deg);
           transform: perspective(2000px) rotateY(-90deg);
   -webkit-transform-origin: right;
-      -ms-transform-origin: right;
           transform-origin: right;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3442,7 +3408,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotateX(90deg);
           transform: perspective(2000px) rotateX(90deg);
   -webkit-transform-origin: bottom;
-      -ms-transform-origin: bottom;
           transform-origin: bottom;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3458,7 +3423,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotateY(90deg);
           transform: perspective(2000px) rotateY(90deg);
   -webkit-transform-origin: left;
-      -ms-transform-origin: left;
           transform-origin: left;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3474,7 +3438,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotateX(-90deg);
           transform: perspective(2000px) rotateX(-90deg);
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
           transform-origin: center;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3490,7 +3453,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotateY(-90deg);
           transform: perspective(2000px) rotateY(-90deg);
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
           transform-origin: center;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3506,7 +3468,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotate(0deg);
           transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: top;
-      -ms-transform-origin: top;
           transform-origin: top;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3522,7 +3483,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotate(0deg);
           transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: right;
-      -ms-transform-origin: right;
           transform-origin: right;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3538,7 +3498,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotate(0deg);
           transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: bottom;
-      -ms-transform-origin: bottom;
           transform-origin: bottom;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3554,7 +3513,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotate(0deg);
           transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: left;
-      -ms-transform-origin: left;
           transform-origin: left;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3570,7 +3528,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotate(0deg);
           transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
           transform-origin: center;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3586,7 +3543,6 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-transform: perspective(2000px) rotate(0deg);
           transform: perspective(2000px) rotate(0deg);
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
           transform-origin: center;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3600,7 +3556,6 @@ table.hover tr:nth-of-type(even):hover {
 
 .scale-in-up.mui-enter {
   -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
           transform: scale(0.5);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3609,13 +3564,11 @@ table.hover tr:nth-of-type(even):hover {
 
 .scale-in-up.mui-enter.mui-enter-active {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .scale-in-down.mui-enter {
   -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
           transform: scale(1.5);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3624,13 +3577,11 @@ table.hover tr:nth-of-type(even):hover {
 
 .scale-in-down.mui-enter.mui-enter-active {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1; }
 
 .scale-out-up.mui-leave {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3639,13 +3590,11 @@ table.hover tr:nth-of-type(even):hover {
 
 .scale-out-up.mui-leave.mui-leave-active {
   -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
           transform: scale(1.5);
   opacity: 0; }
 
 .scale-out-down.mui-leave {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3654,13 +3603,11 @@ table.hover tr:nth-of-type(even):hover {
 
 .scale-out-down.mui-leave.mui-leave-active {
   -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
           transform: scale(0.5);
   opacity: 0; }
 
 .spin-in.mui-enter {
   -webkit-transform: rotate(-0.75turn);
-      -ms-transform: rotate(-0.75turn);
           transform: rotate(-0.75turn);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3669,13 +3616,11 @@ table.hover tr:nth-of-type(even):hover {
 
 .spin-in.mui-enter.mui-enter-active {
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
           transform: rotate(0);
   opacity: 1; }
 
 .spin-out.mui-leave {
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
           transform: rotate(0);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3684,13 +3629,11 @@ table.hover tr:nth-of-type(even):hover {
 
 .spin-out.mui-leave.mui-leave-active {
   -webkit-transform: rotate(0.75turn);
-      -ms-transform: rotate(0.75turn);
           transform: rotate(0.75turn);
   opacity: 0; }
 
 .spin-in-ccw.mui-enter {
   -webkit-transform: rotate(0.75turn);
-      -ms-transform: rotate(0.75turn);
           transform: rotate(0.75turn);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3699,13 +3642,11 @@ table.hover tr:nth-of-type(even):hover {
 
 .spin-in-ccw.mui-enter.mui-enter-active {
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
           transform: rotate(0);
   opacity: 1; }
 
 .spin-out-ccw.mui-leave {
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
           transform: rotate(0);
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
@@ -3714,7 +3655,6 @@ table.hover tr:nth-of-type(even):hover {
 
 .spin-out-ccw.mui-leave.mui-leave-active {
   -webkit-transform: rotate(-0.75turn);
-      -ms-transform: rotate(-0.75turn);
           transform: rotate(-0.75turn);
   opacity: 0; }
 
@@ -3884,6 +3824,12 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
+.home--body {
+  background: #fafafa; }
+  @media screen and (min-width: 64em) {
+    .home--body .row {
+      max-width: 1040px; } }
+
 img {
   width: 100%;
   max-width: 100%; }
@@ -3905,6 +3851,9 @@ img {
 
 .wf-active, .wf-inactive {
   visibility: visible; }
+
+.hr--small {
+  margin-top: 0; }
 
 body {
   font-size: 120%; }
@@ -3960,15 +3909,23 @@ date,
   .dark:hover {
     color: #00AB6B; }
 
+.infinite-scroll {
+  margin: 0; }
+
+@media screen and (min-width: 64em) {
+  .infinite-scroll {
+    margin-right: 350px; } }
+
 .post-list {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.0392157);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.03);
   border-radius: 3px; }
+
+.post-list--data {
+  padding: 16px; }
 
 .post-list a {
   color: #333333;
@@ -4034,9 +3991,16 @@ date,
   margin-bottom: 10px;
   display: block; }
 
+@media screen and (min-width: 40em) {
+  .home--body .top-bar {
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.15); } }
+
+@media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  .top-bar {
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.15); } }
+
 .top-bar {
-  background: #fff;
-  border-bottom: 1px solid #E1E1E1; }
+  background: #fff; }
 
 .top-bar ul {
   background: #fff; }
@@ -4058,29 +4022,44 @@ date,
 .profile {
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 100%; }
+  padding: 0; }
 
 .header {
   border-bottom: 1px solid #eee;
   padding-bottom: 40px;
   padding-top: 40px;
   margin-bottom: 20px;
-  text-align: center;
-  position: relative; }
+  text-align: center; }
 
 .profile--avatar {
-  display: inline-block;
   float: right;
   width: 100px;
   height: 100px;
   border-radius: 50%; }
 
-.about {
-  padding-top: 16px;
-  border-top: 1px solid #E1E1E1;
-  border-bottom: 1px solid #E1E1E1; }
+.sidebar {
+  width: 350px;
+  display: inline-block;
+  padding-left: 15px; }
 
-.footer {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  text-align: center; }
+.sidebar--inner {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.sidebar--heading {
+  margin-top: 40px;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 1rem; }
+
+.tags a {
+  background: #fff;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  padding: 5px 10px 5px 12px;
+  border-radius: 3px;
+  border: 1px solid #EFEFEF;
+  font-size: 1rem;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  display: inline-block; }
+  .tags a:hover {
+    border: 1px solid #E1E1E1; }

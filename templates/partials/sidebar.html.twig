@@ -1,0 +1,20 @@
+{% if config.plugins.taxonomylist.enabled %}
+<div class="sidebar-content">
+    <h6 class="sidebar--heading">Featured tags</h6>
+    <hr class="hr--small">
+    {% include 'partials/taxonomylist.html.twig' with {'base_url':base_url_relative, 'taxonomy':'tag'} %}
+</div>
+{% endif %}
+
+{% if config.plugins.archives.enabled %}
+<div class="sidebar-content">
+    <h6 class="sidebar--heading">Archives</h6>
+    <hr class="hr--small">
+	{% include 'partials/archives.html.twig' with {'base_url':base_url_relative} %}
+</div>
+{% endif %}
+
+<footer>
+  <hr>
+  <p class="footer--text">&copy; {{ site.title }} {{ t("now"|date('Y')) }}</p>
+</footer>

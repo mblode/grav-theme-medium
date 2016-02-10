@@ -1,12 +1,24 @@
+.infinite-scroll {
+	margin: 0;
+}
+
+@include breakpoint(large) {
+	.infinite-scroll {
+		margin-right: 350px;
+	}
+}
+
 .post-list {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	background-color: $white;
 	border: 1px solid rgba(0, 0, 0, 0.0392157);
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.03);
 	border-radius: 3px;
+}
+
+.post-list--data {
+	padding: 16px;
 }
 
 .post-list a {

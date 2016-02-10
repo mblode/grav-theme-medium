@@ -1,0 +1,32 @@
+.sidebar {
+  width: 350px;
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.sidebar--inner {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sidebar--heading {
+  margin-top: 40px;
+  font-family: $default-font-family;
+  font-size: 1rem;
+}
+
+.tags a {
+  background: $white;
+  font-family: $default-font-family;
+  padding: 5px 10px 5px 12px;
+  border-radius: 3px;
+  border: 1px solid $lighter-gray;
+  font-size: 1rem;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  display: inline-block;
+
+  &:hover {
+    border: 1px solid $light-gray;
+  }
+}

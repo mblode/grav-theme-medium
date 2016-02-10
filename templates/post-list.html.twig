@@ -35,6 +35,12 @@
         {% endif %}
       </div>
 
+      <div class="sidebar show-for-large">
+        <div class="sidebar--inner">
+          {% include 'partials/sidebar.html.twig' with {'blog':page} %}
+        </div>
+      </div>
+
     {% endblock %}
 
 {% endembed %}

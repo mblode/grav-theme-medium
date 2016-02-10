@@ -12,36 +12,29 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <title>{% if header.title %}{{ header.title|e('html') }} - {% endif %}{{ 'SITE.TITLE'|t|e('html') }}</title>
-  <link rel="shortcut icon" href="{{ url('theme://images/favicon.ico') }}" />
+  <link rel="shortcut icon" href="{{ url('theme://dist/images/favicon.ico') }}" />
   <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
   {% block stylesheets %}
-    {% do assets.addCss('theme://css/app.css',100) %}
+    {% do assets.addCss('theme://dist/styles/app.min.css',100) %}
   {% endblock %}
   {{ assets.css() }}
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="{{ page.header.class }}--body">
 
     {% include 'partials/navigation.html.twig' %}
 
     <div class="row">
-      <div class="large-12 columns">
+      {% block header %}
+          {% if page.header.header is not same as(false) and theme_config.title_header %}
+              {% include 'partials/header.html.twig' %}
+          {% endif %}
+      {% endblock %}
 
-        {% block header %}
-            {% if page.header.header is not same as(false) and theme_config.title_header %}
-                {% include 'partials/header.html.twig' %}
-            {% endif %}
-        {% endblock %}
-
-        <div class="{{ page.header.class }}">
-        {% block content %}{% endblock %}
-        </div>
-
-        {% block footer %}
-        {% include 'partials/footer.html.twig' %}
-        {% endblock %}
+      <div class="{{ page.header.class }}">
+      {% block content %}{% endblock %}
       </div>
     </div>
 
@@ -54,8 +47,7 @@
         {% do assets.addJs('theme://bower_components/jquery/dist/jquery.min.js') %}
         {% do assets.addJs('theme://bower_components/what-input/what-input.min.js') %}
         {% do assets.addJs('theme://bower_components/foundation-sites/dist/foundation.min.js') %}
-        {% do assets.addJs('theme://js/app.js') %}
-        {% do assets.addJs('theme://js/jquery.jscroll.min.js') %}
+        {% do assets.addJs('theme://dist/scripts/main.min.js') %}
         <script id="dsq-count-scr" src="//matthewblode.disqus.com/count.js" async></script>
     {% endblock %}
     {{ assets.js() }}

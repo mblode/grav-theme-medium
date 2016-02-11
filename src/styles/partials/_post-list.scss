@@ -18,8 +18,17 @@
 }
 
 .post-list--data {
-	padding: 16px;
+	padding: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
+
+@include breakpoint(medium) {
+	.post-list--data {
+		padding: 15px;
+	}
+}
+
 
 .post-list a {
 	color: $black;

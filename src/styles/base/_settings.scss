@@ -61,7 +61,7 @@ $black: #333333;
 $white: #fff;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: "ff-meta-serif-web-pro", "Georgia", "Times New Roman", Times, serif;
+$body-font-family: "PT Serif", "Georgia", "Times New Roman", Times, serif;
 $default-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -98,7 +98,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: "ff-meta-web-pro", 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$header-font-family: "PT Sans", 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

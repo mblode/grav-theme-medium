@@ -380,7 +380,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "ff-meta-serif-web-pro", "Georgia", "Times New Roman", Times, serif;
+  font-family: "PT Serif", "Georgia", "Times New Roman", Times, serif;
   font-weight: normal;
   line-height: 1.6;
   color: #333333;
@@ -1209,7 +1209,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "ff-meta-web-pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -3846,12 +3846,6 @@ img {
 .button.large {
   border-radius: calc(1.25rem*2); }
 
-.wf-loading {
-  visibility: hidden; }
-
-.wf-active, .wf-inactive {
-  visibility: visible; }
-
 .hr--small {
   margin-top: 0; }
 
@@ -3925,7 +3919,13 @@ date,
   border-radius: 3px; }
 
 .post-list--data {
-  padding: 16px; }
+  padding: 15px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+@media screen and (min-width: 40em) {
+  .post-list--data {
+    padding: 15px; } }
 
 .post-list a {
   color: #333333;
@@ -3942,6 +3942,7 @@ date,
   margin-top: 20px; }
 
 .post--header {
+  padding-top: 10px;
   padding-bottom: 10px; }
 
 .post--meta {
@@ -3993,11 +3994,11 @@ date,
 
 @media screen and (min-width: 40em) {
   .home--body .top-bar {
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.15); } }
+    border-bottom: 1px solid #E1E1E1; } }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .top-bar {
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.15); } }
+    border-bottom: 1px solid #E1E1E1; } }
 
 .top-bar {
   background: #fff; }
@@ -4015,7 +4016,7 @@ date,
     padding: 0; }
   .top-bar ul .menu-text a {
     color: #333333;
-    font-family: "ff-meta-web-pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   .top-bar ul .active a {
     color: #333333 !important; }
 
@@ -4056,7 +4057,7 @@ date,
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   padding: 5px 10px 5px 12px;
   border-radius: 3px;
-  border: 1px solid #EFEFEF;
+  border: 1px solid #E1E1E1;
   font-size: 1rem;
   margin-right: 5px;
   margin-bottom: 8px;

@@ -2,7 +2,7 @@
 
 ![Medium](screenshot.jpg)
 
-Medium is a simple and modern blogging theme based on Medium's design language, built for Grav CMS.
+Medium is a simple and modern blogging theme based on Medium.com's design language, built for Grav CMS.
 
 ### Key Features
 * Built using Foundation 6.

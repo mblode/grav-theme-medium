@@ -4025,13 +4025,6 @@ date,
   margin-bottom: 40px;
   padding: 0; }
 
-.header {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  margin-bottom: 20px;
-  text-align: center; }
-
 .profile--avatar {
   float: right;
   width: 100px;
@@ -4064,3 +4057,37 @@ date,
   display: inline-block; }
   .tags a:hover {
     border: 1px solid #E1E1E1; }
+
+.archives {
+  margin-left: 0; }
+  .archives li {
+    list-style: none; }
+
+.archives .label {
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #E1E1E1;
+  background: #fff;
+  color: #333333;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  vertical-align: text-top; }
+
+.archives .archive_date {
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 1rem;
+  margin-right: 5px;
+  margin-bottom: 8px; }
+
+.header--image {
+  padding: 60px 0;
+  background-size: cover;
+  background-position: 50% 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  color: #fff; }
+
+@media screen and (min-width: 40em) {
+  .header--image {
+    padding: 100px 0; } }

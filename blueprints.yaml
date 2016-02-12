@@ -32,17 +32,6 @@ form:
         validate:
           type: text
 
-    home_profile:
-        type: toggle
-        label: Home Profile
-        highlight: 0
-        default: 0
-        options:
-          1: Enabled
-          0: Disabled
-        validate:
-          type: bool
-
     infinite_scroll:
         type: toggle
         label: Infinite Scroll

@@ -30,3 +30,28 @@
     border: 1px solid $light-gray;
   }
 }
+
+.archives {
+  margin-left: 0;
+
+  & li {
+    list-style: none;
+  }
+}
+
+.archives .label {
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid $light-gray;
+  background: $white;
+  color: $black;
+  font-family: $default-font-family;
+  vertical-align: text-top;
+}
+
+.archives .archive_date {
+  font-family: $default-font-family;
+  font-size: 1rem;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}

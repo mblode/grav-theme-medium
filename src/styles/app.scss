@@ -47,8 +47,10 @@
 @import 'base/defaults';
 @import 'base/typography';
 
-@import 'partials/post-list';
-@import 'partials/post';
+@import 'templates/post-list';
+@import 'templates/post';
+
 @import 'partials/navigation';
 @import 'partials/profile';
 @import 'partials/sidebar';
+@import 'partials/header';

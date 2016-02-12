@@ -25,11 +25,12 @@
 
     {% include 'partials/navigation.html.twig' %}
 
+    {% if page.header.header %}
+        {% include 'partials/header.html.twig' %}
+    {% endif %}
+
     <div class="row">
       {% block header %}
-          {% if page.header.header is not same as(false) and theme_config.title_header %}
-              {% include 'partials/header.html.twig' %}
-          {% endif %}
       {% endblock %}
 
       <div class="{{ page.header.class }}">

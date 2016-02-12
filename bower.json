@@ -1,13 +1,13 @@
 {
   "name": "grav-theme-medium",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
-    "ZURB <foundation@zurb.com>"
+    "Matthew Blode"
   ],
-  "description": "Basic template for a new Foundation for Sites project.",
+  "Medium is a simple and modern blogging theme based on Medium's design language, built for Grav CMS.",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "http://foundation.zurb.com",
+  "homepage": "https://github.com/mblode/grav-theme-medium",
   "dependencies": {
     "foundation-sites": "~6.1.0",
     "motion-ui": "~1.1.0"

@@ -5,7 +5,6 @@ en:
     COPYRIGHT: © Copyright %s Your Company
   SUBSCRIBE: Subscribe
   TWEET: Tweet
-  SHARE: Share
   MONTHS_OF_THE_YEAR: [January, February, March, April, May, June, July, August, September, October, November, December]
   DAYS_OF_THE_WEEK: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
 
@@ -16,7 +15,6 @@ el:
     COPYRIGHT: © Δικαιώματα %s Η εταιρία σας
   SUBSCRIBE: Εγγραφή
   TWEET: Tweet
-  SHARE: Κοινοποίηση
   MONTHS_OF_THE_YEAR: [Ιανουάριος, Φεβρουάριος, Μάρτιος, Απρίλιος, Μάιος, Ιούνιος, Ιούλιος, Αύγουστος, Σεπτέμβριος, Οκτώβριος, Νοέμβριος, Δεκέμβριος]
   DAYS_OF_THE_WEEK: [Δευτέρα, Τρλιτη, Τετάρτη, Πέμπτη, Παρασκευή, Σαββάτο, Κυριακή]
 
@@ -27,7 +25,6 @@ es:
     COPYRIGHT: © Copyright %s Tu Compañía
   SUBSCRIBE: Suscribir
   TWEET: Twittear
-  SHARE: Compartir
   MONTHS_OF_THE_YEAR: [Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Augosto, Septiembre, Octubre, Noviembre, Diciembre]
   DAYS_OF_THE_WEEK: [Lunes, Martes, Miércoles, Jueves, Viernes, Sábado, Domingo]
 
@@ -38,7 +35,6 @@ cs:
     COPYRIGHT: © Copyright %s Moje společnost
   SUBSCRIBE: Odebírat
   TWEET: Tweet
-  SHARE: Sdílet
   MONTHS_OF_THE_YEAR: [Leden, Únor, Březen, Duben, Květen, Červen, Červenec, Srpen, Září, Říjen, Listopad, Prosinec]
   DAYS_OF_THE_WEEK: [Pondělí, Úterý, Středa, Čtvrtek, Pátek, Sobota, Neděle]
 
@@ -49,7 +45,6 @@ de:
     COPYRIGHT: © Copyright %s deine Firma
   SUBSCRIBE: Abonnieren
   TWEET: Tweeten
-  SHARE: Teilen
   MONTHS_OF_THE_YEAR: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
   DAYS_OF_THE_WEEK: [Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag]
 
@@ -60,7 +55,6 @@ it:
     COPYRIGHT: Tutti i diritti riservati © %s Società
   SUBSCRIBE: Abbonati
   TWEET: Twitta
-  SHARE: Condividi
   MONTHS_OF_THE_YEAR: [Gennaio, Febbraio, Marzo, Cprile, Maggio, Giugno, Luglio, Agosto, Settembre, Ottobre, Novembre, Dicembre]
   DAYS_OF_THE_WEEK: [Lunedi, Martedi, Mercoledi, Giovedi, Venerdi, Sabato, Domenica]
 
@@ -71,7 +65,6 @@ fi:
     COPYRIGHT: © Tekijänoikeus %s Oma Yritys
   SUBSCRIBE: Tilaa
   TWEET: Twiittaa
-  SHARE: Jaa
   MONTHSOFTHE_YEAR: [Tammikuu, Helmikuu, Maaliskuu, Huhtikuu, Toukokuu, Kesäkuu, Heinäkuu, Elokuu, Syyskuu, Lokakuu, Marraskuu, Joulukuu]
   DAYSOFTHE_WEEK: [Maanantai, Tiistai, Keskiviikko, Torstai, Perjantai, Lauantai, Sunnuntai]
 
@@ -82,7 +75,6 @@ fr:
     COPYRIGHT: Tous droits réservés © %s Votre Entreprise
   SUBSCRIBE: Abonnez-vous
   TWEET: Twittez
-  SHARE: Partagez
   MONTHS_OF_THE_YEAR: [Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
   DAYS_OF_THE_WEEK: [Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi, Dimanche]
 
@@ -93,7 +85,6 @@ nl:
       COPYRIGHT: Copyright © %s Uw Bedrijf
   SUBSCRIBE: Abonneren
   TWEET: Tweet
-  SHARE: Delen
   MONTHS_OF_THE_YEAR: [Januari, Februari, Maart, April, Mei Juni, Juli, Augustus, September, Oktober, November, December]
   DAYS_OF_THE_WEEK: [Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag]
 
@@ -104,7 +95,6 @@ nb:
     COPYRIGHT: © Opphavsrett %s Ditt Selskap
   SUBSCRIBE: Abonner
   TWEET: Tweet
-  SHARE: Del
   MONTHS_OF_THE_YEAR: [januar, februar, mars, april, mai, juni, juli, august, september, oktobernovember, desember]
   DAYS_OF_THE_WEEK: [mandag, tirsdag, onsdag, torsdag, fredag, lørdag, søndag]
 
@@ -115,7 +105,6 @@ pl:
     COPYRIGHT: © Copyright %s Twoja firma
   SUBSCRIBE: Subskrypcja
   TWEET: Tweet
-  SHARE: Podziel się
   MONTHS_OF_THE_YEAR: [Styczeń, Luty, Marzec, Kwiecień, Maj, Czerwiec, Lipiec, Sierpień, Wrzesień, Październik, Listopad, Grudzień]
   DAYS_OF_THE_WEEK: [Poniedziałek, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela]
 
@@ -126,7 +115,6 @@ pt:
     COPYRIGHT: © Copyright %s Empresa
   SUBSCRIBE: Subscrever
   TWEET: Twittar
-  SHARE: Partilhar
   MONTHS_OF_THE_YEAR: [Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
   DAYS_OF_THE_WEEK: [Segunda, Terça, Quarta, Quinta, Sexta, Sábado, Domingo]
 
@@ -137,7 +125,6 @@ ro:
     COPYRIGHT: © Copyright %s Compania ta
   SUBSCRIBE: Abonează-te
   TWEET: Tweet
-  SHARE: Distribuie
   MONTHS_OF_THE_YEAR: [Ianuarie, Februarie, Martie, Aprilue, Mai, Iunie, Iulie, August, Septembrie, Octombrie, Noiembrie, Decembrie]
   DAYS_OF_THE_WEEK: [Luni, Marti, Miercuri, Joi, Vineri, Sâmbătă, Duminică]
 
@@ -148,6 +135,5 @@ ru:
     COPYRIGHT: © Все права защищены %s Ваша компания
   SUBSCRIBE: Подписаться
   TWEET: Твит
-  SHARE: Поделиться
   MONTHS_OF_THE_YEAR: [Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь]
   DAYS_OF_THE_WEEK: [Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье]

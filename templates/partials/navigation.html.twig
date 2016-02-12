@@ -2,7 +2,7 @@
     <div class="top-bar-left top-bar-inline">
         <ul class="menu">
             <li class="menu-text">
-                <a href="{{ base_url }}">{{ site.title }}</a>
+                <a href="{{ base_url == '' ? '/' : base_url }}">{{ site.title }}</a>
             </li>
         </ul>
     </div>

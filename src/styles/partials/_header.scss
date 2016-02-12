@@ -1,12 +1,13 @@
 .header--image {
-  padding: 60px 0;
-  background-size: cover;
   background-position: 50% 0;
-  text-align: center;
   background-repeat: no-repeat;
-  display: block;
-  overflow: hidden;
+  background-size: cover;
   color: $white;
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 60px 0;
+  text-align: center;
 }
 
 @include breakpoint(medium) {

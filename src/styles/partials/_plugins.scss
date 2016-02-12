@@ -1,0 +1,21 @@
+.search-item {
+  margin-left: 0 !important;
+}
+
+.simplesearch input {
+  border-radius: 21px;
+  font-family: $default-font-family;
+  padding-left: 15px;
+  width: 100px;
+}
+
+.random {
+  border-radius: 3px;
+  font-family: $default-font-family;
+}
+
+@include breakpoint(medium) {
+  .simplesearch input {
+    width: 200px;
+  }
+}

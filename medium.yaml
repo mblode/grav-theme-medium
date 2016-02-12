@@ -1,6 +1,5 @@
 enabled: true
 default_lang: en
-author: John Appleseed
 infinite_scroll: true
 analytics: UA-YOURCODE
 social:

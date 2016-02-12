@@ -12,35 +12,39 @@
   }
 }
 
-
 .top-bar {
   background: $white;
+
+  ul {
+    background: $white;
+
+    li:not(.menu-text) a {
+      color: $medium-gray;
+      font-family: $default-font-family;
+      font-size: 1rem;
+      margin-top: .25rem;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
 }
 
-.top-bar ul {
-   background: $white;
+.menu-text {
+  padding: 0;
 
-   li:not(.menu-text) a {
-     margin-top: .25rem;
-     font-size: 1rem;
-     font-family: $default-font-family;
-     color: $medium-gray;
-
-     &:hover {
-       color: $black;
-     }
-   }
-
-  .menu-text {
-    padding: 0;
+  a {
+    color: $black;
+    font-family: $header-font-family;
   }
+}
 
-  .menu-text a {
-     color: $black;
-     font-family: $header-font-family;
-  }
+.active a {
+  color: $black !important;
+}
 
-  .active a {
-    color: $black !important;
-  }
+
+.top-bar-inline {
+  width: auto !important;
 }

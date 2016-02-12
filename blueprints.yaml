@@ -24,14 +24,6 @@ form:
         validate:
           type: text
 
-    author:
-        type: text
-        size: medium
-        label: Author
-        default: 'Matthew Blode'
-        validate:
-          type: text
-
     infinite_scroll:
         type: toggle
         label: Infinite Scroll

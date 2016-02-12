@@ -1,12 +1,11 @@
 <div class="columns profile">
     <div class="columns small-8">
         <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">
-          <h1 class="dark">{{ theme_config.author }}</h1>
+          <h1 class="dark">{{ site.author.name }}</h1>
         </a>
         <p>{{ 'SITE.DESCRIPTION'|t }}</p>
         <button class="button default hollow">
-            <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">Follow
-                {{ theme_config.social.twitter }}</a>
+            <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}"><i class="fa fa-twitter"></i> Follow</a>
         </button>
     </div>
     <div class="columns small-4">

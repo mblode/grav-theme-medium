@@ -1,23 +1,25 @@
 .home--body {
-	background: $off-white;
-	@include breakpoint(large) {
-		.row {
-			max-width: 1040px;
-		}
-	}
+  background: $off-white;
+
+  @include breakpoint(large) {
+    .row {
+      max-width: 1040px;
+    }
+  }
 }
 
 img {
-	width: 100%;
-	max-width: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
-@each $name, $value in $button-sizes {
-    .button.#{$name} {
-			border-radius: calc(#{$value}*2)
-		}
+@each $name,
+$value in $button-sizes {
+  .button.#{$name} {
+    border-radius: calc(#{$value}*2);
+  }
 }
 
 .hr--small {
-	margin-top: 0;
+  margin-top: 0;
 }

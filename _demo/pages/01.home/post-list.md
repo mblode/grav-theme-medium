@@ -1,6 +1,8 @@
 ---
 title: Home
 published: true
+header: true
+
 process:
     markdown: true
 child_type: default

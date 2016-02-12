@@ -1,14 +1,24 @@
 <div class="top-bar">
-    <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
+    <div class="top-bar-left top-bar-inline">
+        <ul class="menu">
             <li class="menu-text">
-              <a href="{{ base_url_relative }}">{{ site.title }}</a>
+                <a href="{{ base_url_relative }}">{{ site.title }}</a>
             </li>
         </ul>
     </div>
 
+    {% if config.plugins.simplesearch.enabled %}
+    <div class="top-bar-right top-bar-inline">
+        <ul class="menu">
+            <li class="simplesearch">
+              {% include 'partials/simplesearch_searchbox.html.twig' %}
+            </li>
+        </ul>
+    </div>
+    {% endif %}
+
     <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
+        <ul class="menu">
 
             {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}

@@ -4,6 +4,7 @@ date: 20:18 23-06-2015
 taxonomy:
     tag:
         - grav
+        - whoop
     category:
         - blog
 routable: true

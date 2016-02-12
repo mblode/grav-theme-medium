@@ -8,13 +8,23 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{% if header.title %}{{ header.title|e('html') }} - {% endif %}{{ 'SITE.TITLE'|t|e('html') }}</title>
+  <title>{% if header.title %}{{ header.title|e('html') }} - {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.metadata.description }}">
   <link rel="shortcut icon" href="{{ url('theme://dist/images/favicon.ico') }}" />
-  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/rss.xml">
+
   {% block stylesheets %}
     {% do assets.addCss('theme://dist/styles/app.min.css',100) %}
   {% endblock %}
   {{ assets.css() }}
+
+  {% block javascripts %}
+      {% do assets.addJs('theme://bower_components/jquery/dist/jquery.min.js') %}
+      {% do assets.addJs('theme://bower_components/what-input/what-input.min.js') %}
+      {% do assets.addJs('theme://bower_components/foundation-sites/dist/foundation.min.js') %}
+      {% do assets.addJs('theme://dist/scripts/main.min.js') %}
+  {% endblock %}
+  {{ assets.js() }}
 
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,400italic,700' rel='stylesheet' type='text/css'>
 
@@ -41,16 +51,6 @@
     {% if site.analytics %}
     {% include 'partials/analytics.html.twig' %}
     {% endif %}
-
-    {% block javascripts %}
-
-        {% do assets.addJs('theme://bower_components/jquery/dist/jquery.min.js') %}
-        {% do assets.addJs('theme://bower_components/what-input/what-input.min.js') %}
-        {% do assets.addJs('theme://bower_components/foundation-sites/dist/foundation.min.js') %}
-        {% do assets.addJs('theme://dist/scripts/main.min.js') %}
-        <script id="dsq-count-scr" src="//matthewblode.disqus.com/count.js" async></script>
-    {% endblock %}
-    {{ assets.js() }}
 
 </body>
 </html>

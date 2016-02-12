@@ -12,22 +12,22 @@
 </article>
 
 <div class="post--meta column small-12">
-  <div class="post--info">
+  <div class="columns small-3 medium-2">
     <a class="post--avatar" href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">
         <img src="{{ avatar_url }}">
     </a>
-
-    <div class="post--description">
-        <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">
-            <h5 class="dark">{{ theme_config.author }}</h5>
-        </a>
-        <p class="caption">{{ site.metadata.description }}</p>
-    </div>
   </div>
 
-  <div class="post--follow">
-    <button class="button default hollow">
-        <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">Follow</a>
+  <div class="columns small-6 medium-7">
+      <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">
+          <h5 class="dark">{{ site.author.name }}</h5>
+      </a>
+      <p class="caption">{{ site.metadata.description }}</p>
+  </div>
+
+  <div class="columns small-3 medium-3">
+    <button class="button default hollow post--follow ">
+        <a href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}"><i class="fa fa-twitter show-for-medium"></i> Follow</a>
     </button>
   </div>
 

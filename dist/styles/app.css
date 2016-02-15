@@ -3825,7 +3825,7 @@ table.hover tr:nth-of-type(even):hover {
           animation-delay: 700ms !important; }
 
 .home--body {
-  background: #fafafa; }
+  background: #efefef; }
   @media screen and (min-width: 64em) {
     .home--body .row {
       max-width: 1040px; } }
@@ -3877,6 +3877,9 @@ button {
 
 blockquote {
   font-style: italic; }
+
+code {
+  padding-top: 0rem; }
 
 pre {
   background: #efefef;

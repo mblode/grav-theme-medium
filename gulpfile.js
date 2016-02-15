@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache');
-var minifycss = require('gulp-minify-css');
+var cssnano = require('gulp-cssnano');
 var sass = require('gulp-sass');
 
 gulp.task('images', function(){
@@ -47,7 +47,7 @@ gulp.task('styles', function(){
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest('dist/styles/'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
+    .pipe(cssnano())
     .pipe(gulp.dest('dist/styles/'));
 });
 

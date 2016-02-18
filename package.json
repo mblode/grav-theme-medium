@@ -1,6 +1,6 @@
 {
   "name": "grav-theme-medium",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Medium is a simple and modern blogging theme based on Medium's design language, built for Grav CMS.",
   "main": "gulpfile.js",
   "devDependencies": {},

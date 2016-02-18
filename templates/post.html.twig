@@ -1,7 +1,7 @@
 {% embed 'partials/base.html.twig' %}
 
 {% block content %}
-<article class="post columns small-12">
+<article class="post column small-12">
     <header class="post--header">
         <h1>{{ page.title }}</h1>
         <date class="post--date">{{ page.date|nicetime(true) }}</date>
@@ -11,7 +11,7 @@
     </section>
 </article>
 
-<div class="post--meta columns small-12">
+<div class="post--meta column small-12">
   <div class="columns small-3 medium-2">
     <a class="post--avatar" href="http://twitter.com/{{ theme_config.social.twitter|trim('@') }}">
         <img src="{{ avatar_url }}">
@@ -33,7 +33,7 @@
 
 </div>
 
-<div class="post--nav columns small-12">
+<div class="post--nav column small-12">
     {% if not page.isFirst %}
     <span class="prev">
         <a href="{{ page.nextSibling.url }}">
@@ -52,7 +52,7 @@
 </div>
 
 {% if page.header.disqus %}
-<div class="archive readmore columns small-12">
+<div class="archive readmore column small-12">
     <h3>Comments</h3>
     {% include 'partials/disqus.html.twig' %}
 </div>

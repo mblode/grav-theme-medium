@@ -6,11 +6,6 @@ taxonomy:
         - grav
     category:
         - blog
-routable: true
-cache_enable: true
-visible: true
-published: true
-disqus: false
 ---
 
 You'll find this post in your `user/pages/01.blog/welcome-to-grav` folder - edit this post and reload the browser to see your changes.

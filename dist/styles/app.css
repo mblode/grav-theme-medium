@@ -1307,15 +1307,15 @@ dl {
 
 blockquote {
   margin: 0 0 1rem;
-  padding: 0.5625rem 1.25rem 0 1.1875rem;
-  border-left: 2px solid #333; }
+  padding: 0;
+  border-left: none; }
   blockquote, blockquote p {
     line-height: 1.6;
     color: #333; }
 
 cite {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   color: #808080; }
   cite:before {
     content: '\2014 \0020'; }
@@ -3849,6 +3849,9 @@ img {
 .hr--small {
   margin-top: 0; }
 
+.pad--10 {
+  padding-top: 10px; }
+
 body {
   font-size: 120%; }
 
@@ -3875,12 +3878,10 @@ h5 {
 button {
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }
 
-blockquote {
-  font-style: italic; }
-
 pre {
   background: #efefef;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  padding: 5px; }
 
 date,
 .footer--text,
@@ -3902,6 +3903,39 @@ date,
   color: #333; }
   .dark:hover {
     color: #00ab6b; }
+
+blockquote > p {
+  padding: 15px;
+  border-left: 3px solid #333; }
+
+blockquote > blockquote > blockquote {
+  margin: 0; }
+  blockquote > blockquote > blockquote p {
+    padding: 15px; }
+  blockquote > blockquote > blockquote > p {
+    border-left: 3px solid #00ab6b;
+    color: #00ab6b; }
+    blockquote > blockquote > blockquote > p a {
+      color: #00ab6b;
+      text-decoration: underline; }
+  blockquote > blockquote > blockquote > blockquote > p {
+    border-left: 3px solid #ffae00;
+    color: #ffae00; }
+    blockquote > blockquote > blockquote > blockquote > p a {
+      color: #ffae00;
+      text-decoration: underline; }
+  blockquote > blockquote > blockquote > blockquote > blockquote > p {
+    border-left: 3px solid #ec5840;
+    color: #ec5840; }
+    blockquote > blockquote > blockquote > blockquote > blockquote > p a {
+      color: #ec5840;
+      text-decoration: underline; }
+  blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p {
+    border-left: 5px solid #3adb76;
+    color: #3adb76; }
+    blockquote > blockquote > blockquote > blockquote > blockquote > blockquote > p a {
+      color: #00ab6b;
+      text-decoration: underline; }
 
 .infinite-scroll {
   margin: 0; }
@@ -4009,7 +4043,6 @@ date,
   width: auto !important; }
 
 .profile {
-  margin-bottom: 40px;
   margin-top: 40px;
   padding: 0; }
 

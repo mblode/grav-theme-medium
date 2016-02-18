@@ -1,5 +1,5 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
-{% set avatar_url = pages.find('/about').media.images|first.url ?: url('theme://images/avatar.png') %}
+{% set avatar_url = pages.find('/about').media.images|first.url ?: url('theme://dist/images/avatar.png') %}
 {% import 'macros/dates.twig' as dates %}
 <!DOCTYPE html>
 <html class="no-js" lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
@@ -37,6 +37,10 @@
 
     {% if page.header.header %}
         {% include 'partials/header.html.twig' %}
+    {% endif %}
+
+    {% if page.header.profile %}
+        {% include 'partials/profile.html.twig' %}
     {% endif %}
 
     <div class="row">

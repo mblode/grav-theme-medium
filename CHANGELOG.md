@@ -1,3 +1,9 @@
+# v2.0.0
+## 02/18/2016
+
+1. [](#bugfix)
+    * Change the template structures
+
 # v1.1.2
 ## 02/15/2016
 

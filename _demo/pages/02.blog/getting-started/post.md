@@ -6,11 +6,6 @@ taxonomy:
         - grav
     category:
         - blog
-routable: true
-cache_enable: true
-visible: true
-published: true
-disqus: false
 ---
 
 Grav is very easy to install. Because it does not require a database, installation can be as simple as unzipping the Grav core (or a skeleton) in the server directory you wish to have your Grav install appear.

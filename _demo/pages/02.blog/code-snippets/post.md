@@ -6,11 +6,6 @@ taxonomy:
         - grav
     category:
         - blog
-routable: true
-cache_enable: true
-visible: true
-published: true
-disqus: false
 ---
 
 

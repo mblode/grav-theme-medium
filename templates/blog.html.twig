@@ -26,7 +26,7 @@
     {% endblock %}
 
     {% block content %}
-      <div class="infinite-scroll">
+      <div class="infinite-scroll columns small-12 large-8">
         {% for post in collection %}
           {% include 'partials/post-item.html.twig' %}
         {% endfor %}
@@ -35,11 +35,14 @@
         {% endif %}
       </div>
 
-      <div class="sidebar show-for-large">
+
+
+      <div class="sidebar columns large-4 show-for-large">
         <div class="sidebar--inner">
           {% include 'partials/sidebar.html.twig' with {'blog':page} %}
         </div>
       </div>
+
 
     {% endblock %}
 

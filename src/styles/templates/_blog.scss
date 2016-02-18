@@ -1,0 +1,36 @@
+.infinite-scroll {
+  padding: 0;
+}
+
+@include breakpoint(medium) {
+  .infinite-scroll {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.post-list {
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, .0392157);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .025), 0 1px 4px rgba(0, 0, 0, .03);
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+
+  a {
+    color: $black;
+    display: block;
+  }
+
+  img {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-height: 240px;
+    width: auto;
+  }
+}
+
+.post-list--data {
+  padding: 15px;
+}

@@ -1,7 +1,7 @@
 name: Medium
-version: 2.0.1
+version: 2.0.2
 description: Medium is a simple and modern blogging theme based on Medium's design language, built for Grav CMS.
-icon: globe
+icon: medium
 author:
   name: Matthew Blode
   email: m.blode@gmail.com

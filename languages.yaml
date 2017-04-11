@@ -78,6 +78,16 @@ fr:
   MONTHS_OF_THE_YEAR: [Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
   DAYS_OF_THE_WEEK: [Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi, Dimanche]
 
+hr:
+  SITE:
+    TITLE: Moj Blog
+    DESCRIPTION: Pišem o raznim stvarima
+    COPYRIGHT: © Copyright %s Tvoja Tvrtka
+  SUBSCRIBE: Pretplati me
+  TWEET: Tweet
+  MONTHS_OF_THE_YEAR: [Siječanj, Veljača, Ožujak, Travanj, Svibanj, Lipanj, Srpanj, Kolovoz, Rujan, Listopad, Studeni, Prosinac]
+  DAYS_OF_THE_WEEK: [Ponedjeljak, Utorak, Srijeda, Četvrtak, Petak, Subota, Nedjelja]
+
 nl:
   SITE:
       TITLE: Mijn Blog

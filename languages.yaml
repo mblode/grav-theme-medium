@@ -82,7 +82,7 @@ hr:
   SITE:
     TITLE: Moj Blog
     DESCRIPTION: Pišem o raznim stvarima
-    COPYRIGHT: © Copyright %s Tvoja Tvrtka
+    COPYRIGHT: © Copyright %s Tvrtka
   SUBSCRIBE: Pretplati me
   TWEET: Tweet
   MONTHS_OF_THE_YEAR: [Siječanj, Veljača, Ožujak, Travanj, Svibanj, Lipanj, Srpanj, Kolovoz, Rujan, Listopad, Studeni, Prosinac]

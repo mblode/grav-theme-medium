@@ -147,3 +147,14 @@ ru:
   TWEET: Твит
   MONTHS_OF_THE_YEAR: [Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь]
   DAYS_OF_THE_WEEK: [Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье]
+
+sv:
+  SITE:
+    TITLE: Min Blogg
+    DESCRIPTION: Bloggar om olika saker
+    COPYRIGHT: © Copyright %s Ditt Företag
+  SUBSCRIBE: Prenumerera
+  TWEET: Twittra
+  MONTHS_OF_THE_YEAR: [Januari, Februari, Mars, April, Maj, Juni, Juli, Augusti, September, Oktober, November, December]
+  DAYS_OF_THE_WEEK: [Måndag, Tisdag, Onsdag, Torsdag, Fredag, Lördag, Söndag]
+  

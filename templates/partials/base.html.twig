@@ -16,7 +16,7 @@
   {% block stylesheets %}
     {% do assets.addCss('theme://dist/styles/app.min.css',100) %}
   {% endblock %}
-  {{ assets.css() }}
+  {{ assets.css()|raw }}
 
   {% block javascripts %}
       {% do assets.addJs('theme://bower_components/jquery/dist/jquery.min.js') %}
@@ -24,7 +24,7 @@
       {% do assets.addJs('theme://bower_components/foundation-sites/dist/foundation.min.js') %}
       {% do assets.addJs('theme://dist/scripts/main.min.js') %}
   {% endblock %}
-  {{ assets.js() }}
+  {{ assets.js()|raw }}
 
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,400italic,700' rel='stylesheet' type='text/css'>
 

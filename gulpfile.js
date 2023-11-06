@@ -1,57 +1,70 @@
-var gulp = require('gulp'),
-    plumber = require('gulp-plumber'),
-    rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin'),
-    cache = require('gulp-cache');
-var cssnano = require('gulp-cssnano');
-var sass = require('gulp-sass');
+const { src, dest, watch, series, parallel } = require('gulp');
+const plumber = require('gulp-plumber');
+const rename = require('gulp-rename');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const cssnano = require('gulp-cssnano');
+const sass = require('gulp-sass')(require('sass'));
+const postcss = require('gulp-postcss');
+const postcssPresetEnv = require('postcss-preset-env');
 
-gulp.task('images', function(){
-  gulp.src('src/images/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('dist/images/'));
-});
-
-gulp.task('scripts', function(){
-  return gulp.src('src/scripts/**/*.js')
-    .pipe(plumber({
-      errorHandler: function (error) {
-        console.log(error.message);
-        this.emit('end');
-    }}))
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('dist/scripts/'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(gulp.dest('dist/scripts/'));
-});
-
-var sassPaths = [
+const sassPaths = [
   'bower_components/foundation-sites/scss',
   'bower_components/motion-ui/src'
 ];
 
-gulp.task('styles', function(){
-  gulp.src(['src/styles/**/*.scss'])
+function styles() {
+  return src(['src/styles/**/*.scss'])
     .pipe(plumber({
       errorHandler: function (error) {
-        console.log(error.message);
+        console.error(error.message);
         this.emit('end');
-    }}))
+      }
+    }))
     .pipe(sass({
       includePaths: sassPaths
-    }))
-    .pipe(autoprefixer('last 2 versions'))
-    .pipe(gulp.dest('dist/styles/'))
+    }).on('error', sass.logError))
+    .pipe(postcss([
+      postcssPresetEnv(/* plugin options */)
+    ]))
+    .pipe(dest('dist/styles/'))
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano())
-    .pipe(gulp.dest('dist/styles/'));
-});
+    .pipe(dest('dist/styles/'));
+}
 
-gulp.task('default', function(){
-  gulp.watch("src/styles/**/*.scss", ['styles']);
-  gulp.watch("src/scripts/**/*.js", ['scripts']);
-});
+function scripts() {
+  return src('src/scripts/**/*.js')
+    .pipe(plumber({
+      errorHandler: function (error) {
+        console.error(error.message);
+        this.emit('end');
+      }
+    }))
+    .pipe(concat('main.js'))
+    .pipe(dest('dist/scripts/'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(dest('dist/scripts/'));
+}
+
+function images() {
+  return src('src/images/**/*')
+    .pipe(dest('dist/images/'));
+}
+
+function watchFiles() {
+  watch('src/styles/**/*.scss', styles);
+  watch('src/scripts/**/*.js', scripts);
+}
+
+// Expose tasks to CLI
+exports.styles = styles;
+exports.scripts = scripts;
+exports.images = images;
+exports.watch = watchFiles;
+
+// Define complex tasks
+const build = series(parallel(styles, scripts, images), watchFiles);
+
+exports.default = build;

@@ -7,7 +7,7 @@
         <date class="post--date">{{ page.date|nicetime(true) }}</date>
     </header>
     <section class="post--body">
-        {{ page.content }}
+        {{ page.content|raw }}
     </section>
 </article>
 

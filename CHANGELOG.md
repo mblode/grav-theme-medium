@@ -1,3 +1,10 @@
+# v2.0.6
+## 12/14/2023
+
+1. [](#bugfix)
+    * added raw
+    * added php needed for theme to display
+
 # v2.0.5
 ## 07/24/2017
 

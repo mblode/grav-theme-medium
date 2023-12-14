@@ -1,13 +1,12 @@
 name: Medium
-version: 2.0.5
+version: 2.0.6
 description: Medium is a simple and modern blogging theme based on Medium's design language, built for Grav CMS.
 icon: medium
 author:
-  name: Matthew Blode
+  name: Matthew Blode & diomed
   email: m.blode@gmail.com
   url: http://matthewblode.com
 homepage: https://github.com/mblode/grav-theme-medium
-demo: https://medium.matthewblode.com/
 keywords: medium, theme, minimal, modern, fast, responsive, html5, css3, multilanguage
 bugs: https://github.com/getgrav/grav-theme-medium/issues
 license: MIT

@@ -91,12 +91,10 @@ https://github.com/getgrav/grav-plugin-simplesearch)
 
 Pull requests are the way to go.
 
-### Creators
+## License
 
-**Matthew Blode**
-- <https://twitter.com/mblode>
-- <https://github.com/mblode>
-- <http://codepen.io/mblode>
+MIT
 
-### License
-MIT © [Matthew Blode](http://mblode.github.io)
+---
+
+Crafted by [<img src="https://blode.co/avatar-circle.png" width="20" align="top" />](https://blode.co) [Matthew Blode](https://blode.co)

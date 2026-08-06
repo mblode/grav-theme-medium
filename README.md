@@ -1,95 +1,64 @@
+<div align="center">
+
 # Medium
 
-![Medium](screenshot.jpg)
+**A blogging theme for Grav CMS that borrows Medium's typography, built on Foundation 6**
 
-Medium is a simple and modern blogging theme based on Medium.com's design language, built for Grav CMS.
+Install it, copy the demo pages, and you have a blog with tags, archives, and search.
 
-### Key Features
-* Built using Foundation 6.
-* Responsive and mobile friendly.
-* Lightweight and minimal for optimal performance.
-* Beautiful, legible typography.
-* Super clean and modern design.
-* Support for Disqus comments.
-* Google Analytics built-in.
-* Twitter integration.
+<img src="screenshot.jpg" alt="The Medium theme rendering a blog listing" width="720" />
 
-# Installation
-Installing the Medium theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file.
+</div>
 
-### GPM Installation (Recommended)
-The simplest way to install this theme is  the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line).  From the root of your Grav install type:
+## Install
 
-    bin/gpm install medium
-
-This will install the Medium theme into your `/user/themes` directory within Grav. Its files can be found under `/your/site/grav/user/themes/medium`.
-
-### Manual Installation
-
-To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `medium`. You can find these files either on [GitHub](https://github.com/mblode/grav-theme-medium) or via [GetGrav.org](http://getgrav.org/downloads/themes).
-
-You should now have all the theme files under
-
-    /your/site/grav/user/themes/medium
-
-### GPM Update
-
-The simplest way to update this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm). You can do this with this by navigating to the root directory of your Grav install using your system's Terminal (also called command line) and typing the following:
-
-    bin/gpm update medium
-
-# Setup
-
-If you want to set Medium as the default theme, you can do so by following these steps:
-
-* Navigate to `/your/site/grav/user/config`.
-* Open the **system.yaml** file.
-* Change the `theme:` setting to `theme: medium`.
-* Save your changes.
-* Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.
-
-### Pages Structure
-To get your blog up and running, copy the `pages` folder from  `/your/site/grav/user/themes/medium/_demo` and replace it with `/your/site/grav/user/pages`. This will help set-up a basic structure of your website using the templates.
-
-### Configuration
-
-The Medium theme has a few simple options that help you configure the theme (`medium.yaml`):
-
-```
-enabled: true
-default_lang: en
-infinite_scroll: true
-analytics: UA-YOURCODE
-social:
-    twitter: @getgrav
+```bash
+bin/gpm install medium
 ```
 
-In order to configure Medium, you should copy the theme's `medium.yaml` file into a file of your own: `user/config/themes/medium.yaml` and make your modifications there.
+Run that from the root of your Grav install. The theme lands in `user/themes/medium`. To install it by hand instead, clone this repository into that folder.
 
-# Other information
+## Quickstart
 
-### Editing the Theme
-1. In the terminal: `cd /your/site/grav/user/themes/medium`.
-1. Install NPM dependencies: `npm install`.
-2. Install Bower dependencies: `bower install`.
-3. Run Gulp: `gulp`.
-4. You can edit the SCSS, JS and Images files in the `src` folder.
-5. You can edit the Twig templates in `templates`.
+Seed the pages, then switch the theme over:
 
-### Supported plugins
-* [Pagination](https://github.com/getgrav/grav-plugin-pagination)
-* [Archives](
-https://github.com/getgrav/grav-plugin-archives)
-* [Random](
-https://github.com/getgrav/grav-plugin-random)
-* [SimpleSearch](
-https://github.com/getgrav/grav-plugin-simplesearch)
-* [Taxonomy List](
-  https://github.com/getgrav/grav-plugin-taxonomylist)
+```bash
+cp -R user/themes/medium/_demo/pages/* user/pages/
+bin/grav clear-cache
+```
 
-### Contributing
+Set `theme: medium` in `user/config/system.yaml`. The demo pages give you a home page, a blog listing with four posts, and an about page.
 
-Pull requests are the way to go.
+## Configuration
+
+Copy `user/themes/medium/medium.yaml` to `user/config/themes/medium.yaml` and edit it there, or use the Themes screen in the Grav admin.
+
+| Option | Default | What it does |
+|--------|---------|--------------|
+| `default_lang` | `en` | Fallback for the `<html lang>` attribute when no Grav language is active. |
+| `analytics` | | Google Analytics property ID for the analytics partial. |
+| `social.twitter` | `@getgrav` | Handle behind the avatar, the author name, and the Follow button. |
+| `home_profile` | | Puts the author profile block above the blog listing instead of the page header. |
+
+## Supported plugins
+
+Each one is optional, and the templates check whether it is enabled before rendering anything.
+
+- **[Pagination](https://github.com/getgrav/grav-plugin-pagination):** the Load More link at the foot of the blog listing.
+- **[Archives](https://github.com/getgrav/grav-plugin-archives):** the month list in the sidebar.
+- **[Taxonomy List](https://github.com/getgrav/grav-plugin-taxonomylist):** the featured tags in the sidebar.
+- **[Random](https://github.com/getgrav/grav-plugin-random):** the I'm Feeling Lucky button in the sidebar.
+- **[SimpleSearch](https://github.com/getgrav/grav-plugin-simplesearch):** the search box in the top bar and the results page.
+- **[Feed](https://github.com/getgrav/grav-plugin-feed):** the Subscribe link in the top bar.
+- **[LangSwitcher](https://github.com/getgrav/grav-plugin-langswitcher):** the language switcher in the top bar.
+
+## Notes
+
+- Comments come from Disqus, switched on per page with `disqus: true` in the page header. The shortname in `templates/partials/disqus.html.twig` is hardcoded and has to be changed to your own.
+- The analytics partial ships Google's retired `analytics.js` snippet, so a `UA-` property collects nothing. Leave `analytics` unset and add your own tag instead.
+- The blog listing always loads the next page in place with jScroll, so Pagination has to be enabled for it to have anything to load. The `infinite_scroll` option in the config is not read by any template.
+- Foundation 6 and jQuery ship in the committed `bower_components` folder, with Font Awesome 4.7 and Google Fonts loaded from CDNs. Nothing has to be built to use the theme.
+- Last released in December 2023, and looked after only as far as keeping it rendering.
 
 ## License
 
